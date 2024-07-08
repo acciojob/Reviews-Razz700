@@ -37,7 +37,7 @@ const handleprev=()=>{
   return (
     <div className="review"> 
              {console.log(render,'in html')}
-            <div id='author-1' className='author'>{render.name} </div>
+            <div id={'author-'+render.id} className='author'>{render.name} </div>
             <div className='job'>{render.job} </div>
             <div className='info'>{render.text} </div>
             <div className='person-img'><img src={render.image} alt='image' /></div> 
