@@ -35,14 +35,13 @@ const handleprev=()=>{
   console.log(render);
 }
   return (
-    <div>
-        <div className="review">
+    <div className="review"> 
              {console.log(render,'in html')}
-            <div className='author'>{render.name} </div>
+            <div id='author-1' className='author'>{render.name} </div>
             <div className='job'>{render.job} </div>
             <div className='info'>{render.text} </div>
             <div className='person-img'><img src={render.image} alt='image' /></div> 
-    </div>
+    
         <button onClick={handleprev} className='prev-btn'>previous</button>
         <button onClick={handlerandom} className='random-btn' >surprise me</button>
         <button onClick={handlenext} className='next-btn'>next</button>
